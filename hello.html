@@ -16,11 +16,23 @@
 
             }
         }
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('form').onsubmit = function(){
+                const name = document.querySelector('#name').value ;
+                alert(`Hello ${name}`)
+            }
+        })
     </script>
 </head>
 <body>
     <h1>Are you in Darkness</h1>
     <button onclick="hello()">Click Here</button>
+    <br>
+    <br>
+    <form>
+        <input autofocus type="text" id="name" placeholder="Name">
+        <input type="submit">
+    </form>
     
 </body>
 </html> 
